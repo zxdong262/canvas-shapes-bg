@@ -1,11 +1,6 @@
 # canvas-shapes-bg
-this jquery plugin will draw simple shape moving animation in canvas.
 
-only support >=ie9
-
-## demo & doc
-
-<a href="http://html5beta.com/apps/canvas-shapes.html">http://html5beta.com/apps/canvas-shapes.html</a>
+Draw simple shapes moving animations in canvas as webpage background
 
 ## Load
 
