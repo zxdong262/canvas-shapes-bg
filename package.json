@@ -1,7 +1,7 @@
 {
   "name": "canvas-shapes-bg",
   "description": "Draw simple shape moving animation in canvas as webpage background",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "MIT",
   "main": "dist/canvas-shapes-bg.js",
   "module": "dist/canvas-shapes-bg.mjs",

@@ -5,8 +5,19 @@ const cwd = process.cwd()
 
 function run () {
   const pre = `;(function (root, factory) {
-    root.CanvasShapesBg = factory();
-  }(this, function () {`
+    if (typeof define === 'function' && define.amd) {
+      // AMD. Register as an anonymous module.
+      define([], factory);
+    } else if (typeof module === 'object' && module.exports) {
+      // Node. Does not work with strict CommonJS, but
+      // only CommonJS-like environments that support module.exports,
+      // like Node.
+      module.exports = factory();
+    } else {
+      // Browser globals (root is window)
+      root.CanvasShapesBg = factory();
+    }
+  }(typeof self !== 'undefined' ? self : this, function () {`
 
   const after = 'return CanvasShapesBg}));'
   const p = resolve(cwd, 'dist/canvas-shapes-bg.js')
