@@ -2,6 +2,10 @@
 
 Draw simple shapes moving animations in canvas as webpage background
 
+## Demo
+
+https://html5beta.com/apps/canvas-shapes-bg/
+
 ## Load
 
 ### as esm module
